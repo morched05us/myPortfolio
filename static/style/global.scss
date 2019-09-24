@@ -1,0 +1,8 @@
+@import './components/header.scss';
+@import './components/banner.scss';
+@import './components/resume.scss';
+@import './components/skillset.scss';
+
+@import './mixins.scss';
+
+@include reset();

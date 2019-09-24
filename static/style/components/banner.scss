@@ -1,0 +1,151 @@
+.banner{
+    /* Create the parallax scrolling effect */
+    height: 100%;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+.c-home__background{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url('/static/assets/image/intro.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+}*/
+.c-home{
+    z-index: 2;
+    height: 60%;
+    width: 75%;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__info{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 80%;
+        width: 50%;
+        ul{
+            list-style: none;
+            li{
+                margin-top: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                i{
+                    margin-right:5px;
+                    transition: 0.3s;
+                }
+            }
+            a:hover{
+                i{
+                    color:#8C43FF;
+                }
+            }
+        }
+        
+        span{
+            height: 30px;
+            width: 100px;
+            background: #8C43FF;
+            border-radius: 25px;
+            border-bottom-left-radius: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        &__social{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                i{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                    height: 30px;
+                    width: 30px;
+                }
+                a:hover{
+                    i{
+                        color:white;
+                        background: #8C43FF;
+                    }
+                }
+            }
+        }
+    }
+    &__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        &__img{
+            height: 80%;
+            width: 80%;
+            background: rgba(140, 67, 255, 0.5);
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: solid white 5px;
+                height: 80%;
+                width: 80%;
+                border-radius: 50px;
+                background: #8C43FF;
+                img{
+                    height: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    .c-home{
+        width: 85%;
+        &__info{
+            align-items: center;
+        }
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 900px){
+    .c-home{
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+        &__info{
+            width: 100%;
+        }
+        &__logo{
+            &__img{
+
+                min-width: 300px;
+            }
+        }
+    }
+}

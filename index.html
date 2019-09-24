@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/style/myStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <section id="c-sideBar">
+            <input type="checkbox" id="navCheck">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="c-navBar" id="c-navBar">
+                <li class="c-navBar__flag"><a href="#" class="c-navBar__link">Home</a></li>
+                <li class="c-navBar__flag"><a href="#resume" class="c-navBar__link">About</a></li>
+                <li class="c-navBar__flag"><a href="#skillset" class="c-navBar__link">Skills</a></li>
+                <li class="c-navBar__flag"><a href="#" class="c-navBar__link">Portfolio</a></li>
+                <li class="c-navBar__flag"><a href="#" class="c-navBar__link">Contact</a></li>
+            </ul>
+        </section>
+        <ul class="c-navBar" id="c-navBar">
+            <li class="c-navBar__flag"><a href="#" class="c-navBar__link is-listSelected"
+                    onclick="toggleListSelect(this)" id="first">Home</a></li>
+            <li class="c-navBar__flag"><a href="#resume" class="c-navBar__link"
+                    onclick="toggleListSelect(this)">About</a>
+            </li>
+            <li class="c-navBar__flag"><a href="#skillset" class="c-navBar__link"
+                    onclick="toggleListSelect(this)">Skills</a>
+            </li>
+            <li class="c-navBar__flag"><a href="#" class="c-navBar__link" onclick="toggleListSelect(this)">Portfolio</a>
+            </li>
+            <li class="c-navBar__flag"><a href="#" class="c-navBar__link" onclick="toggleListSelect(this)">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <section class="banner">
+        <!--  <div class="c-home__background"></div> -->
+        <div class="c-home">
+            <div class="c-home__info">
+                <ul>
+                    <li>
+                        <span>Hello I'm</span></li>
+                    <li>
+                        <h1>Morched El Amarti</h1>
+                    </li>
+                    <li>
+                        <h4>Full Stack JavaScript Developer</h4>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="mailto:morched-us@hotmail.com"><i class="fa fa-envelope"></i>morched-us@hotmail.com</a></li>
+                    <li><a href="tel:+212617391778"><i class="fa fa-phone"></i> +212 617 39 17 78</a></li>
+                    <li><a href="#"><i class="fa fa-map-marker"></i> 9 Avril Bloc 9 Avril 3, Tetouan, Maroc</a></li>
+                </ul>
+                <ul class="c-home__info__social">
+                    <li><a href="http://www.fb.com"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkdin.com"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="http://www.github.com"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div class="c-home__logo">
+                <div class="c-home__logo__img">
+                    <div>
+                        <img src="/static/assets/image/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="resume" id="resume">
+        <div class="c-resume">
+            <h1>Hi, I'm Morched, Nice to meet you.</h1>
+            <p>A Full Stack Developer in JavaScript vanilla and Vue.JS, Node.Js, Express (Restfull API), mongoDB (Mongoose), Joi (key validator), JsonWebToken (URL-safe), Jest (units test) and supertest (intergrations test), Java / J2EE (Swing, Jsp, hibernate and jersey). </p>
+        </div>
+    </section>
+    <section class="skillset" id="skillset">
+        <div class="c-skillset" id="c-skillset">
+            <div class="c-skillset__frontend" id="c-skillset__frontend">
+                <div class="c-skillset__frontend__front">
+                    <div class="c-skillset__main">
+                        <img src="./static/assets/image/skills/frontend.svg" class="is-skill-icon">
+                        <h3>Front-end Developer</h3>
+                        <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                    </div>
+                    <div class="c-skillset__flip">
+                        <img src="./static/assets/image/skills/frontend.svg" id="frontendFlip">
+                    </div>
+                </div>
+                <div class="c-skillset__frontend__back">
+                    <ul>
+                        <li>
+                            <img src="/static/assets/image/skills/frontend/html-5.svg" alt="">
+                            <h4>HTML 5</h4>
+                        </li>
+                        <li>
+                            <img src="/static/assets/image/skills/frontend/css3.svg" alt="">
+                            <h4>CSS 3</h4>
+                        </li>
+                        <li>
+                            <img src="/static/assets/image/skills/frontend/sass.svg" alt="">
+                            <h4>SASS</h4>
+                        </li>
+                        <li>
+                            <img src="/static/assets/image/skills/frontend/javascript.svg" alt="">
+                            <h4>JavaScript</h4>
+                        </li>
+                        <li>
+                            <img src="/static/assets/image/skills/frontend/vuejs.svg" alt="">
+                            <h4>Vue Js</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c-skillset__backend" id="c-skillset__backend">
+                <div class="c-skillset__backend__front">
+                    <div class="c-skillset__main">
+                        <img src="./static/assets/image/skills/backend.svg" class="is-skill-icon">
+                        <h3>Back-end Developer</h3>
+                        <p>I value simple content structure, clean architecture, and thoughtful interactions.</p>
+                    </div>
+                    <div class="c-skillset__flip">
+                        <img src="./static/assets/image/skills/backend.svg" id="backendFlip">
+                    </div>
+                </div>
+                <div class="c-skillset__backend__back">
+                    <ul>
+                        <li>
+                            <img src="/static/assets/image/skills/backend/nodejs.svg" alt="">
+                            <h4>Node.Js</h4>
+                        </li>
+                        <li>
+                            <img src="/static/assets/image/skills/backend/mongodb.svg" alt="">
+                            <h4>MongoDB</h4>
+                        </li>
+                        <li>
+                            <img src="/static/assets/image/skills/backend/java.svg" alt="">
+                            <h4>Java</h4>
+                        </li>
+                        <li>
+                            <img src="/static/assets/image/skills/backend/mysql.svg" alt="">
+                            <h4>MySql</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c-skillset__skills" id="c-skillset__skills">
+                <div class="c-skillset__skills__front">
+                    <div class="c-skillset__main">
+                        <img src="./static/assets/image/skills/softskills.svg" class="is-skill-icon">
+                        <h3>Soft Skills</h3>
+                        <p></p>
+                    </div>
+                    <div class="c-skillset__flip">
+                        <img src="./static/assets/image/skills/softskills.svg" id="skillsFlip">
+                    </div>
+                </div>
+                <div class="c-skillset__skills__back">
+                    <ul>
+                        <li>Communication</li>
+                        <li>Team Work</li>
+                        <li>Project Management</li>
+                        <li>Creativity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+    </section>
+</body>
+<script src="./Script/components/header.js"></script>
+<script src="./Script/components/skillset.js"></script>
+
+</html>
