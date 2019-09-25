@@ -25,8 +25,8 @@
         }
         span{
             display: block;
-            width: 33px;
-            height: 4px;
+            width: 29px;
+            height: 3px;
             margin-bottom: 5px;
             
             background: black;
@@ -48,8 +48,7 @@
         input:checked ~ span
         {
             opacity: 1;
-            transform: rotate(45deg) translate(-2px, -1px);
-            background: #232323;
+            transform: rotate(45deg) translate(-1px, -0px);
         }
 
         input:checked ~ span:nth-last-child(3)
@@ -91,47 +90,6 @@
         transition: 0.5s;
     }
 }
-@media (max-width: 900px){
-    .header{
-        z-index: 3;
-        height: 100%;
-        section{
-            margin-top: 10px;
-            display: block;
-            input:checked ~ .c-navBar{
-                transform: none;
-            }
-        }
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 0px;
-    }   
-
-    .c-navBar{
-        transform: translateX(-250px);
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 200px;
-        transition: 0.5s;
-        background: #8C43FF;
-        border-radius: 20px;
-        border-bottom-left-radius: 0px;
-        box-shadow: 0 0 2px black;
-        &__flag{
-            margin: 10px 10px;
-        }
-        &__link{
-            color: white;
-        }
-        &__link:hover{
-            color:black;
-        }
-    }
-}
-
-
 
 .is-listSelected:after{
     content: "";
@@ -161,5 +119,48 @@
     }
     a:hover{
         color: rgb(140, 47, 255);
+    }    
+}
+
+@media (max-width: 900px){
+    .header{
+        width: 50px;
+        border-bottom-right-radius: 5px;
+        z-index: 3;
+        section{
+            margin-top: 10px;
+            display: block;
+            input:checked ~ .c-navBar{
+                transform: none;
+            }
+        }
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }   
+
+    .c-navBar{
+        transform: translateX(-250px);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 200px;
+        transition: 0.5s;
+        background: #8C43FF;
+        border-radius: 20px;
+        border-bottom-left-radius: 0px;
+        box-shadow: 0 0 2px black;
+        &__flag{
+            margin: 10px 10px;
+        }
+        &__link{
+            color: white;
+        }
+        &__link:hover{
+            color:black;
+        }
+    }    
+    .is-scroll{
+        height: 40px;
     }
 }
