@@ -151,8 +151,9 @@
 /////////////////-------------------------------------------
 .progress{
     flex-direction: column;
+    text-align: center;
     .progressbar{
-        height: 18px;
+        height: 27px;
         width: 100%;
         border-radius: 10px;
         border: solid black 1px;
@@ -160,9 +161,10 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        margin-top: 5px;
        
         &__pro{
-            height: 17px;
+            height: 26px;
             border-radius: 10px;
             background: #8C43FF;        
             display: flex;

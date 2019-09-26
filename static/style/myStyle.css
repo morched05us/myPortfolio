@@ -145,7 +145,8 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 700px; }
 
 /*
 .c-home__background{
@@ -285,6 +286,7 @@
     width: 65%; } }
 @media (max-width: 900px) {
   .c-resume {
+    margin-top: -100px;
     width: 80%; }
     .c-resume h1 {
       text-align: center; } }
@@ -398,18 +400,20 @@
     .c-skillset__frontend, .c-skillset__backend, .c-skillset__skills {
       width: 80%; } }
 .progress {
-  flex-direction: column; }
+  flex-direction: column;
+  text-align: center; }
   .progress .progressbar {
-    height: 18px;
+    height: 27px;
     width: 100%;
     border-radius: 10px;
     border: solid black 1px;
     text-align: center;
     display: flex;
     justify-content: flex-start;
-    align-items: center; }
+    align-items: center;
+    margin-top: 5px; }
     .progress .progressbar__pro {
-      height: 17px;
+      height: 26px;
       border-radius: 10px;
       background: #8C43FF;
       display: flex;
