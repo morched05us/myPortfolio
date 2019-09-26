@@ -145,3 +145,32 @@
         }
     }
 }
+
+
+
+/////////////////-------------------------------------------
+.progress{
+    flex-direction: column;
+    .progressbar{
+        height: 18px;
+        width: 100%;
+        border-radius: 10px;
+        border: solid black 1px;
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+       
+        &__pro{
+            height: 17px;
+            border-radius: 10px;
+            background: #8C43FF;        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h6{
+                color: white;
+            }
+        }
+    }
+}

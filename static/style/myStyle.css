@@ -126,18 +126,26 @@
   .is-scroll {
     height: 40px; } }
 .banner {
-  /* Create the parallax scrolling effect */
   height: 100%;
   width: 100%;
   min-height: 700px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /*background:  url('../../../bg.jpg') linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  align-items: center; }
+
+.banner:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.2;
+  background-image: url("https://miro.medium.com/max/2500/0*TbEDCh4nVDmw7QJs.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;*/ }
+  background-size: cover; }
 
 /*
 .c-home__background{
@@ -255,7 +263,8 @@
   height: 100%;
   width: 100%;
   min-height: 600px;
-  background: #8C43FF; }
+  background: #8C43FF;
+  box-shadow: 0 0 1px black; }
 
 .c-resume {
   height: 50%;
@@ -388,6 +397,27 @@
       border-bottom: solid rgba(0, 0, 0, 0.2) 0.5px; }
     .c-skillset__frontend, .c-skillset__backend, .c-skillset__skills {
       width: 80%; } }
+.progress {
+  flex-direction: column; }
+  .progress .progressbar {
+    height: 18px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid black 1px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .progress .progressbar__pro {
+      height: 17px;
+      border-radius: 10px;
+      background: #8C43FF;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .progress .progressbar__pro h6 {
+        color: white; }
+
 * {
   margin: 0;
   padding: 0;
