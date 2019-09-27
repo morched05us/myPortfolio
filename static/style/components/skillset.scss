@@ -4,7 +4,24 @@
     align-items: flex-start;
     height: 100%;
     width: 100%;
+    min-height: 700px;
     transform: translateY(-300px);
+}
+.skillset:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.2;
+    background-image: url('../assets/image/backgroundProject.png');  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    transform: translateY(300px);
 }
 
 .c-skillset {
@@ -33,6 +50,7 @@
         height: 100%;
         transition: transform 0.8s;
         transform-style: preserve-3d;
+        cursor: pointer;
 
         &__front{
             position: absolute;
@@ -126,14 +144,22 @@
     .skillset {
         transform: translateY(-250px);
     }
+    .skillset:before {
+        transform: translateY(250px);
+    }
 }
 @media (max-width: 900px){
     .skillset {
         transform: translateY(-200px);
+        height: 1900px;
+    }
+    .skillset:before {
+        transform: translateY(200px);
     }
     .c-skillset{
         flex-direction: column;
         height: 1800px;
+        
         &__frontend,
         &__backend{
             border-right: none;

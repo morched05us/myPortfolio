@@ -21,7 +21,7 @@
                 <li class="c-navBar__flag"><a href="#" class="c-navBar__link">Home</a></li>
                 <li class="c-navBar__flag"><a href="#resume" class="c-navBar__link">About</a></li>
                 <li class="c-navBar__flag"><a href="#skillset" class="c-navBar__link">Skills</a></li>
-                <li class="c-navBar__flag"><a href="#" class="c-navBar__link">Portfolio</a></li>
+                <li class="c-navBar__flag"><a href="#portfolio" class="c-navBar__link">Portfolio</a></li>
                 <li class="c-navBar__flag"><a href="#" class="c-navBar__link">Contact</a></li>
             </ul>
         </section>
@@ -34,7 +34,8 @@
             <li class="c-navBar__flag"><a href="#skillset" class="c-navBar__link"
                     onclick="toggleListSelect(this)">Skills</a>
             </li>
-            <li class="c-navBar__flag"><a href="#" class="c-navBar__link" onclick="toggleListSelect(this)">Portfolio</a>
+            <li class="c-navBar__flag"><a href="#portfolio" class="c-navBar__link"
+                    onclick="toggleListSelect(this)">Portfolio</a>
             </li>
             <li class="c-navBar__flag"><a href="#" class="c-navBar__link" onclick="toggleListSelect(this)">Contact</a>
             </li>
@@ -98,7 +99,7 @@
                         <img src="./static/assets/image/skills/frontend.svg" id="frontendFlip">
                     </div>
                 </div>
-                <div class="c-skillset__frontend__back">
+                <div class="c-skillset__frontend__back" id="c-skillset__frontend__back">
                     <ul>
                         <li>
                             <img src="./static/assets/image/skills/frontend/html-5.svg" alt="">
@@ -134,7 +135,7 @@
                         <img src="./static/assets/image/skills/backend.svg" id="backendFlip">
                     </div>
                 </div>
-                <div class="c-skillset__backend__back">
+                <div class="c-skillset__backend__back" id="c-skillset__backend__back">
                     <ul>
                         <li>
                             <img src="./static/assets/image/skills/backend/nodejs.svg" alt="">
@@ -166,10 +167,10 @@
                         <img src="./static/assets/image/skills/softskills.svg" id="skillsFlip">
                     </div>
                 </div>
-                <div class="c-skillset__skills__back">
+                <div class="c-skillset__skills__back" id="c-skillset__skills__back">
                     <ul>
                         <li class="progress">Communication
-                            <div class="progressbar" >
+                            <div class="progressbar">
                                 <div class="progressbar__pro" style="width: 50%;">
                                     <h6>
                                         50%
@@ -197,7 +198,7 @@
                         </li>
                         <li class="progress">Creativity
                             <div class="progressbar">
-                                <div class="progressbar__pro"  style="width: 60%;">
+                                <div class="progressbar__pro" style="width: 60%;">
                                     <h6>
                                         60%
                                     </h6>
@@ -209,9 +210,47 @@
             </div>
         </div>
     </section>
-    <section class="projects">
+    <section class="portfolio" id="portfolio">
+        <div class="c-projects">
+            <h1>Work Experience</h1>
+            <div class="c-projects__project">
+                <div class="c-projects__project__one">
+                    <ul>
+                        <li>
+                            <h3>project of test</h3></li>
+                        <li>
+                            <h5>2017-2018</h5>
+                        </li>
+                    </ul>
+                    <div>
+                        <ul>
+                            <h4>Technology used :</h4>
+                            <li>Java</li>
+                            <li>Hibernate</li>
+                            <li>Spring JPA</li>
+                        </ul>
+                        <ul>
+                            <h4>Responsibility :</h4>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-projects__project__one">
+
+                </div>
+                <div class="c-projects__project__one">
+
+                </div>
+                <div class="c-projects__project__one">
+
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 <script src="./Script/components/header.js"></script>
 <script src="./Script/components/skillset.js"></script>
+
 </html>
