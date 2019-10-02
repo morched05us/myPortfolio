@@ -81,12 +81,12 @@
     
     &__link{
         text-decoration: none;
-        color: black;
+        color: $color-3rd;
         font-size: 18px;
         font-weight: 500;
     }
     &__link:hover{
-        color: #8C43FF;
+        color: $color-1st;
         transition: 0.5s;
     }
 }
@@ -108,7 +108,7 @@
     transition: none;
 }
 .is-scroll{
-    background: #8C43FF;
+    background: $color-1st;
     box-shadow: 0 0 2px black;
     height: 80px;
     a{
@@ -118,7 +118,7 @@
         background: white;
     }
     a:hover{
-        color: rgb(140, 47, 255);
+        color: $color-2rd;
     }    
 }
 
@@ -146,7 +146,7 @@
         align-items: flex-start;
         width: 200px;
         transition: 0.5s;
-        background: #8C43FF;
+        background: $color-1st;
         border-radius: 20px;
         border-bottom-left-radius: 0px;
         box-shadow: 0 0 2px black;

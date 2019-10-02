@@ -5,7 +5,7 @@
     height: 100%;
     width: 100%;
     min-height: 600px;
-    background: #8C43FF;
+    background: $color-1st;
     box-shadow: 0 0 1px black;
 }
 .c-resume{
@@ -15,9 +15,9 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    color: white;
     h1{
         margin-bottom: 20px;
+        color: white;
     }
     p{
         text-align: center;

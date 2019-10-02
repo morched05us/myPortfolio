@@ -53,7 +53,7 @@
             }
             a:hover{
                 i{
-                    color:#8C43FF;
+                    color:$color-1st;
                 }
             }
         }
@@ -61,7 +61,7 @@
         span{
             height: 30px;
             width: 100px;
-            background: #8C43FF;
+            background: $color-1st;
             border-radius: 25px;
             border-bottom-left-radius: 0;
             display: flex;
@@ -86,7 +86,7 @@
                 a:hover{
                     i{
                         color:white;
-                        background: #8C43FF;
+                        background: $color-1st;
                     }
                 }
             }
@@ -99,22 +99,25 @@
         height: 100%;
         width: 50%;
         &__img{
-            height: 80%;
-            width: 80%;
-            background: rgba(140, 67, 255, 0.5);
+            height: 300px;
+            width: 300px;
+            background: $color-1st;
             border-radius: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
+            transform: rotate(45deg);
+            border: solid white 2px;
             div{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border: solid white 5px;
-                height: 80%;
-                width: 80%;
+                border: solid white 2px;
+                height: 90%;
+                width: 90%;
                 border-radius: 50px;
-                background: #8C43FF;
+                background: $color-1st;
+                transform: rotate(-45deg);
                 img{
                     height: 80%;
                 }

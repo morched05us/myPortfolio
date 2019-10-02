@@ -15,7 +15,7 @@
     height: 100%;
     z-index: 1;
     opacity: 0.2;
-    background-image: url('../assets/image/backgroundProject.png');  
+    background-image: url('../assets/image/backgroundProject.jpg');  
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -192,7 +192,7 @@
         &__pro{
             height: 26px;
             border-radius: 10px;
-            background: #8C43FF;        
+            background: $color-1st;        
             display: flex;
             justify-content: center;
             align-items: center;
