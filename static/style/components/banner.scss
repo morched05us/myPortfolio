@@ -130,9 +130,12 @@
 
 @media (max-width: 1100px){
     .c-home{
-        width: 85%;
+        width: 75%;
         &__info{
             align-items: center;
+        }
+        &__logo{
+            justify-content: center;
         }
         li{
             display: flex;
@@ -148,11 +151,6 @@
         width: 100%;
         &__info{
             width: 100%;
-        }
-        &__logo{
-            &__img{
-            }
-            justify-content: center;
         }
     }
 }
