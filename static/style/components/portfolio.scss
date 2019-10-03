@@ -1,11 +1,10 @@
 .portfolio{
-    height: 100%;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background: white;
+    background: $color-1st;
     transform: translateY(-200px);
 }
 
@@ -14,24 +13,26 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background: $color-1st;
 
     &__header{
         height: 100%;
-        width: 30%;
-        min-width: 400px;
+        width: 25%;
+        min-width: 300px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
         box-shadow: 1px 0 0 0 black;
         z-index: 2;
+
         h1{
             color: white;
             font-size: 40px;
             margin-top: 30px;
         }
+
         ul{
             list-style: none;
             display: flex;
@@ -47,19 +48,62 @@
 
     &__project{
         height: 100%;
-        width: 70%;
+        width: 75%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: wrap;
         background: white;
+        position: relative;
 
-        &__one{
-            width: 30%;
-            min-width: 300px;
-            img{
-                height: 100%;
-                width: 100%;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 3px;
+            height: calc(100% - 50px);
+            background: $color-2rd;
+        }
+        
+        .column {
+            margin: 0 40px 0 40px;
+
+            .title{
+                h1 {
+                    font-size: 120px;
+                    color: rgba(0,0,0,0.1);
+                    font-family: serif;
+                    letter-spacing: 3px;
+
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        left: 20px;
+                        transform: translateY(25px);
+                        width: 15px;
+                        height: 10px;
+                        background: #fff;
+                        border: 3px solid $color-2rd;
+                        border-bottom-right-radius: 15px;
+                    } 
+                }
+
+                h2 {
+                    margin-top: -60px;
+                    font-size: 33px;
+                }
+            }
+            .description {
+                border-left: 1px solid #000;
+                p {
+                    font-size: 13px;
+                    line-height: 20px;
+                    margin-left: 20px;
+                    margin-top: 10px;
+                    color: $color-3rd;
+                    text-align: justify;
+                }
             }
         }
     }
@@ -69,16 +113,24 @@
     .c-projects{
         flex-direction: column;
         justify-content: space-evenly;
+        align-items: center;
+
         &__header{
             margin-top: 100px;
             box-shadow: none;
             width: 100%;
+
             ul{
                 width: 100%;
                 justify-content: space-evenly;
                 flex-direction: row;
                 margin-bottom: 25px;
             }
+        }
+
+        &__project{
+            width: 90%;
+            border-radius: 25px;
         }
     }
 }
