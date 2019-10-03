@@ -10,6 +10,7 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $color-1st; 
+  //background: $color-1st; 
+  background: linear-gradient($color-2rd,$color-1st);
   border-radius: 10px;
 }

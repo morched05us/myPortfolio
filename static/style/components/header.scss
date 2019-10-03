@@ -81,12 +81,12 @@
     
     &__link{
         text-decoration: none;
-        color: $color-3rd;
+        color: $color-1st;
         font-size: 18px;
         font-weight: 500;
     }
     &__link:hover{
-        color: $color-1st;
+        color: $color-2rd;
         transition: 0.5s;
     }
 }
@@ -108,7 +108,9 @@
     transition: none;
 }
 .is-scroll{
-    background: $color-1st;
+   // background: $color-1st;
+   
+    background: linear-gradient(to right, $color-1st,$color-2rd);
     box-shadow: 0 0 2px black;
     height: 80px;
     a{

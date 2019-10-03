@@ -101,22 +101,24 @@
         &__img{
             height: 300px;
             width: 300px;
-            background: $color-1st;
+            //background: lighten($color-1st,5%);
+            background: linear-gradient(to right, $color-1st,$color-2rd);
+            border: solid white 2px;
             border-radius: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
             transform: rotate(45deg);
-            border: solid white 2px;
             div{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border: solid white 2px;
-                height: 90%;
-                width: 90%;
+                height: 95%;
+                width: 95%;
                 border-radius: 50px;
-                background: $color-1st;
+                //background: $color-1st;
+                background: linear-gradient(to right, $color-1st,$color-2rd);
                 transform: rotate(-45deg);
                 img{
                     height: 80%;

@@ -5,7 +5,8 @@
     height: 100%;
     width: 100%;
     min-height: 600px;
-    background: $color-1st;
+    //background: $color-1st;
+    background: linear-gradient(to right, $color-1st,$color-2rd);
     box-shadow: 0 0 1px black;
 }
 .c-resume{
