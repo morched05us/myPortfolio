@@ -1,19 +1,19 @@
 .resume{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
+    align-items: flex-start;
+    height: 500px;
     width: 100%;
-    min-height: 600px;
+    min-height: 500px;
     //background: $color-1st;
     background: linear-gradient(to right, $color-1st,$color-2rd);
     box-shadow: 0 0 1px black;
 }
 .c-resume{
-    height: 50%;
+    height: 60%;
     width: 50%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     h1{
@@ -34,7 +34,6 @@
 }
 @media (max-width: 900px){
     .c-resume{
-        margin-top: -100px;
         width: 80%;
         h1{
             text-align: center;

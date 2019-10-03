@@ -4,7 +4,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background: $color-1st;
+    background: linear-gradient(to right, $color-1st, $color-2rd);
     transform: translateY(-200px);
 }
 
@@ -14,7 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background: $color-1st;
+    background: linear-gradient(to right, $color-1st, $color-2rd);
+    padding-bottom: 40px;
 
     &__header{
         height: 100%;
@@ -24,7 +25,6 @@
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
-        box-shadow: 1px 0 0 0 black;
         z-index: 2;
 
         h1{
@@ -47,6 +47,7 @@
     }
 
     &__project{
+        padding-bottom: 20px; 
         height: 100%;
         width: 75%;
         display: flex;
@@ -71,7 +72,7 @@
 
             .title{
                 h1 {
-                    font-size: 120px;
+                    font-size: 80px;
                     color: rgba(0,0,0,0.1);
                     font-family: serif;
                     letter-spacing: 3px;
@@ -90,7 +91,7 @@
                 }
 
                 h2 {
-                    margin-top: -60px;
+                    margin-top: -40px;
                     font-size: 33px;
                 }
             }
@@ -109,14 +110,13 @@
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
     .c-projects{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
 
         &__header{
-            margin-top: 100px;
             box-shadow: none;
             width: 100%;
 
