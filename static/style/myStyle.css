@@ -7,7 +7,7 @@
   align-items: center;
   z-index: 3;
   transition: 0.5s;
-  background: rgba(227, 226, 226, 0.3); }
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0)); }
   .header section {
     display: none;
     margin-left: 10px;
@@ -320,6 +320,7 @@
   height: 600px;
   width: 80%;
   background: white;
+  border-radius: 25px;
   z-index: 2;
   box-shadow: 0 0 2px black;
   display: flex;
@@ -504,6 +505,8 @@
         color: white; }
   .c-projects__project {
     padding-bottom: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     height: 100%;
     width: 75%;
     display: flex;
@@ -523,7 +526,7 @@
     .c-projects__project .column {
       margin: 0 40px 0 40px; }
       .c-projects__project .column .title h1 {
-        font-size: 60px;
+        font-size: 80px;
         color: rgba(0, 0, 0, 0.1);
         font-family: serif;
         letter-spacing: 3px; }
@@ -539,7 +542,7 @@
           border-bottom-right-radius: 15px; }
       .c-projects__project .column .title h2 {
         margin-top: -40px;
-        font-size: 25px; }
+        font-size: 33px; }
       .c-projects__project .column .description {
         border-left: 1px solid #000; }
         .c-projects__project .column .description p {
@@ -565,7 +568,13 @@
         margin-bottom: 25px; }
     .c-projects__project {
       width: 90%;
-      border-radius: 25px; } }
+      border-radius: 25px; }
+      .c-projects__project .column {
+        margin: 0 40px 0 40px; }
+        .c-projects__project .column .title h1 {
+          font-size: 50px; }
+        .c-projects__project .column .title h2 {
+          font-size: 25px; } }
 .contact {
   width: 100%;
   height: 200px;
@@ -675,9 +684,9 @@
       outline: none;
       padding-left: 15px;
       font-size: 15px;
-      background: transparent; }
+      background: rgba(255, 255, 255, 0.4); }
     .c-contact__mail input[type="text"]:focus, .c-contact__mail textarea:focus {
-      background: rgba(255, 255, 255, 0.5); }
+      background: rgba(255, 255, 255, 0.75); }
     .c-contact__mail textarea {
       height: 120px;
       padding-top: 15px; }

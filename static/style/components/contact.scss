@@ -129,10 +129,10 @@
             outline: none;
             padding-left: 15px;
             font-size: 15px;
-            background: transparent;
+            background: rgba(255, 255, 255, 0.4);
         }
         input[type = "text"]:focus, textarea:focus{
-            background: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.75);
         }
         textarea{
             height: 120px;
