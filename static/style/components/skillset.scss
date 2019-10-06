@@ -21,7 +21,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 700px;
-    transform: translateY(300px);
+    transform: translateY(200px);
 }
 
 .c-skillset {
@@ -29,7 +29,6 @@
     width: 80%;
     background: white;
     z-index: 2;
-    border-radius: 25px;
     box-shadow: 0 0 2px black;
     display: flex;
     justify-content: space-evenly;
@@ -38,6 +37,27 @@
     &__frontend,
     &__backend{
         border-right: solid rgba(0, 0, 0, .2) 0.5px;
+    }
+
+    &__skills{
+        &__back{
+            ul{
+                li{
+                    width: 75%;
+                }
+            }
+        }
+    }
+
+    &__frontend,
+    &__backend{
+        &__back{
+            ul{
+                li{
+                    width: 50%;
+                }
+            }
+        }
     }
     &__frontend,
     &__backend,
@@ -83,7 +103,6 @@
                 height: 100%;
 
                 li{
-                    width: 50%;
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;

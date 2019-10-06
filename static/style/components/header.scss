@@ -7,6 +7,7 @@
     align-items: center;
     z-index: 3;
     transition: 0.5s;
+    background: rgba(227, 226, 226, 0.3);
     section{
         display: none;
         margin-left: 10px;
@@ -120,14 +121,19 @@
         background: white;
     }
     a:hover{
-        color: $color-2rd;
-    }    
+        color: $color-4th;
+    }   
+    section span{
+        background: white;
+    } 
 }
 
 @media (max-width: 900px){
     .header{
+        margin-top: 10px;
+        margin-left: 10px;
         width: 50px;
-        border-bottom-right-radius: 5px;
+        border-radius: 5px;
         z-index: 3;
         section{
             margin-top: 10px;
@@ -165,11 +171,4 @@
     .is-scroll{
         height: 40px;
     }
-}
-
-
-
-@media (max-width: 1100px){
-    .header{
-    }   
 }
