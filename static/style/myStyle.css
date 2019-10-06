@@ -523,7 +523,7 @@
     .c-projects__project .column {
       margin: 0 40px 0 40px; }
       .c-projects__project .column .title h1 {
-        font-size: 80px;
+        font-size: 60px;
         color: rgba(0, 0, 0, 0.1);
         font-family: serif;
         letter-spacing: 3px; }
@@ -539,7 +539,7 @@
           border-bottom-right-radius: 15px; }
       .c-projects__project .column .title h2 {
         margin-top: -40px;
-        font-size: 33px; }
+        font-size: 25px; }
       .c-projects__project .column .description {
         border-left: 1px solid #000; }
         .c-projects__project .column .description p {
