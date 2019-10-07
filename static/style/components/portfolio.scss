@@ -6,6 +6,7 @@
     flex-direction: column;
     background: linear-gradient(to right, $color-1st, $color-2rd);
     transform: translateY(-200px);
+    transition: 0.5s;
 }
 
 .c-projects{
@@ -20,7 +21,7 @@
     &__header{
         height: 100%;
         width: 25%;
-        min-width: 300px;
+        min-width: 400px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -30,7 +31,6 @@
         h1{
             color: white;
             font-size: 40px;
-            margin-top: 30px;
         }
 
         ul{
@@ -41,7 +41,16 @@
             flex-direction: column;
             li{
                 margin-top: 30px;
-                color: white;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    transition: 0.5s;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: $color-4th;
+                    }
+                }
             }
         }
     }
@@ -58,6 +67,7 @@
         flex-wrap: wrap;
         background: white;
         position: relative;
+        transition: 0.5s;
 
         &:before {
             content: "";
@@ -147,4 +157,18 @@
             }   
         }
     }
+}
+
+.is-active-portfolio{
+        color: $color-4th !important;
+
+        &:before{
+            content: '';
+            color: $color-4th;
+            height: 8px;
+            width: 5px;
+            background: $color-4th;
+            border: solid $color-4th 1px;
+            margin-right: 10px;
+        }
 }
