@@ -115,11 +115,11 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 200px;
+    width: 150px;
     transition: 0.5s;
-    background: #3A506B;
+    background: linear-gradient(to top, #3A506B, #1C2541);
     border-radius: 20px;
-    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
     box-shadow: 0 0 2px black; }
     .c-navBar__flag {
       margin: 10px 10px; }
@@ -510,6 +510,7 @@
           .c-projects__header ul li a:hover {
             color: #D5AD36; }
   .c-projects__project {
+    border: solid white 2px;
     margin: 50px;
     overflow-y: auto;
     overflow-x: hidden;

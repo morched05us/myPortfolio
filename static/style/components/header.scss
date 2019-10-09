@@ -150,11 +150,11 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        width: 200px;
+        width: 150px;
         transition: 0.5s;
-        background: $color-1st;
+        background: linear-gradient(to top, $color-1st, $color-2rd);
         border-radius: 20px;
-        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
         box-shadow: 0 0 2px black;
         &__flag{
             margin: 10px 10px;
