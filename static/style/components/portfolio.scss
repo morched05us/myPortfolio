@@ -1,5 +1,7 @@
 .portfolio{
     width: 100%;
+    height: 350px;
+    min-width: 350px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -10,23 +12,23 @@
 }
 
 .c-projects{
-    height: 80%;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background: linear-gradient(to right, $color-1st, $color-2rd);
-    padding: 20px 0 20px 0;
 
     &__header{
         height: 100%;
-        width: 25%;
-        min-width: 400px;
+        width: 20%;
+        min-width: 300px;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        justify-content: center;
+        align-items: flex-start;
         flex-direction: column;
-        z-index: 2;
+        padding-left: 25px;
+        z-index: 1;
 
         h1{
             color: white;
@@ -35,9 +37,10 @@
 
         ul{
             list-style: none;
+            width: 100%;
             display: flex;
-            justify-content: flex-start;
-            align-items: center;
+            justify-content: center;
+            align-items: flex-start;
             flex-direction: column;
             li{
                 margin-top: 30px;
@@ -56,11 +59,13 @@
     }
 
     &__project{
-        padding-bottom: 20px; 
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        height: 100%;
-        width: 75%;
+        margin: 50px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-bottom: 20px;
+        border-radius: 25px;
+        height: 250px;
+        width: 80%;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -123,26 +128,34 @@
 }
 
 @media (max-width: 900px){
+    .portfolio{
+        height: 500px;
+    }
     .c-projects{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
 
         &__header{
+            padding: 0px;
             box-shadow: none;
             width: 100%;
+            height: 150px;
+            align-items: center;
 
             ul{
+                align-items: center;
                 width: 100%;
                 justify-content: space-evenly;
                 flex-direction: row;
-                margin-bottom: 25px;
             }
         }
 
         &__project{
+            margin: 25px;
             width: 90%;
             border-radius: 25px;
+            height: 350px;
             .column {
                 margin: 0 40px 0 40px;
     
