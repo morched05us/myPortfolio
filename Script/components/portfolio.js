@@ -42,7 +42,7 @@ function animation(x){
 };
 
 showall.addEventListener('click',function (){
-    animation(2000);
+    animation(window.innerWidth);
     setTimeout(() => {
         var projectsDiv ="";
         projects.forEach( p => {
@@ -55,11 +55,11 @@ showall.addEventListener('click',function (){
         setTimeout(() => {
             animation(0);
         }, 200);
-    }, 200);
+    }, 400);
 });
 
 fullstack.addEventListener('click',function (){
-    animation(2000);
+    animation(window.innerWidth);
     setTimeout(() => {
         var projectsDiv ="";
         projects.forEach( p => {
@@ -76,7 +76,7 @@ fullstack.addEventListener('click',function (){
 });
 
 frontend.addEventListener('click',function (){
-    animation(2000);
+    animation(window.innerWidth);
     setTimeout(() => {
         var projectsDiv ="";
         projects.forEach( p => {

@@ -45,34 +45,34 @@
     <section class="banner">
         <div class="c-home">
             <div class="c-home__info">
-                <ul>
-                    <li>
-                        <span>Hello I'm</span></li>
-                    <li>
+                <ul class="c-home__info__ul">
+                    <li class="c-home__info__ul__li">
+                        <span class="c-home__info__ul__li__hello">Hello I'm</span></li>
+                    <li class="c-home__info__ul__li">
                         <h1>Morched El Amarti</h1>
                     </li>
-                    <li>
+                    <li class="c-home__info__ul__li">
                         <h4>Full Stack JavaScript Developer</h4>
                     </li>
                 </ul>
-                <ul>
-                    <li><a href="mailto:morched-us@hotmail.com"><i class="fa fa-envelope"></i>morched-us@hotmail.com</a>
+                <ul class="c-home__info__ul">
+                    <li class="c-home__info__ul__li"><a href="mailto:morched-us@hotmail.com"  class="c-home__info__ul__li__a"><i class="fa fa-envelope"></i>morched-us@hotmail.com</a>
                     </li>
-                    <li><a href="tel:+212617391778"><i class="fa fa-phone"></i> +212 617 39 17 78</a></li>
-                    <li><a href="#"><i class="fa fa-map-marker"></i> 9 Avril Bloc 9 Avril 3, Tetouan, Maroc</a></li>
+                    <li class="c-home__info__ul__li"><a href="tel:+212617391778"  class="c-home__info__ul__li__a"><i class="fa fa-phone"></i> +212 617 39 17 78</a></li>
+                    <li class="c-home__info__ul__li"><a href="#" class="c-home__info__ul__li__a"><i class="fa fa-map-marker" ></i> 9 Avril Bloc 9 Avril 3, Tetouan, Maroc</a></li>
                 </ul>
                 <ul class="c-home__info__social">
-                    <li><a href="http://www.fb.com"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="http://www.linkdin.com"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="http://www.github.com"><i class="fa fa-github"></i></a></li>
+                    <li class="c-home__info__social__li"><a class="c-home__info__social__li__a" href="http://www.fb.com"><i class="fa fa-facebook"></i></a></li>
+                    <li class="c-home__info__social__li"><a class="c-home__info__social__li__a"  href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                    <li class="c-home__info__social__li"><a class="c-home__info__social__li__a"  href="http://www.linkdin.com"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="c-home__info__social__li"><a class="c-home__info__social__li__a"  href="http://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+                    <li class="c-home__info__social__li"><a class="c-home__info__social__li__a"  href="http://www.github.com"><i class="fa fa-github"></i></a></li>
                 </ul>
             </div>
             <div class="c-home__logo">
                 <div class="c-home__logo__img">
-                    <div>
-                        <img src="./static/assets/image/logo.png" alt="">
+                    <div class="c-home__logo__img__div">
+                        <img src="./static/assets/image/lupus-rex.png" alt="" class="c-home__logo__img__div__img">
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque molestias dolorem et sint earum corrupti! I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
                     </div>
                     <div class="c-skillset__flip">
-                        <img src="./static/assets/image/skills/frontend.svg" id="frontendFlip">
+                        <button id="frontendFlip" class="frontendFlip">More...</button>
                     </div>
                 </div>
                 <div class="c-skillset__frontend__back" id="c-skillset__frontend__back">
@@ -132,7 +132,7 @@
                         <p>I value simple content structure, clean architecture, and thoughtful interactions.</p>
                     </div>
                     <div class="c-skillset__flip">
-                        <img src="./static/assets/image/skills/backend.svg" id="backendFlip">
+                        <button id="backendFlip" class="backendFlip">More...</button>
                     </div>
                 </div>
                 <div class="c-skillset__backend__back" id="c-skillset__backend__back">
@@ -164,7 +164,7 @@
                         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quidem, labore eligendi odit deleniti non. </p>
                     </div>
                     <div class="c-skillset__flip">
-                        <img src="./static/assets/image/skills/softskills.svg" id="skillsFlip">
+                        <button id="skillsFlip" class="skillsFlip">More...</button>
                     </div>
                 </div>
                 <div class="c-skillset__skills__back" id="c-skillset__skills__back">
@@ -211,9 +211,11 @@
         </div>
     </section>
     <section class="portfolio" id="portfolio">
+        <div class="portfolio__header">
+                <h1>Work Experience</h1>
+        </div>
         <div class="c-projects">
             <div class="c-projects__header">
-                <h1>Work Experience</h1>
                 <ul>
                     <li><a id="showAll">All</a></li>
                     <li><a id="showFullStack">Full Stack</a></li>
@@ -248,7 +250,7 @@
     <section class="contact" id="contact">
         <div class="c-contact">
             <div class="c-contact__contacts">
-                <h1>Contact Me</h1>
+                <h1 class="c-contact__contacts-title">Contact Me</h1>
                 <div>
                     <span>
                         <i class="fa fa-map-marker"></i> 
@@ -296,17 +298,19 @@
                         <li><a href="http://www.github.com"><i class="fa fa-github"></i></a></li>
                 </ul>
             </div>
-            <div class="c-contact__mail">
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-                <input type="text" placeholder="Your Email">
-                <textarea id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
+            <form class="c-contact__mail">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="text" placeholder="Your Email" required>
+                <textarea id="" cols="30" rows="10" placeholder="Your Message..." required></textarea>
                 <input type="submit" value="Send Message">
-            </div>
+            </form>
         </div>
     </section>
+    <a href="#"><button class="toTop" id="toTop">A</button></a>
 </body>
 <script src="./Script/components/header.js"></script>
 <script src="./Script/components/skillset.js"></script>
 <script src="./Script//components/portfolio.js"></script>
+<script src="./Script//components/else.js"></script>
 </html>

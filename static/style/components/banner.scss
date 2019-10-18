@@ -38,52 +38,55 @@
         flex-direction: column;
         height: 80%;
         width: 50%;
-        ul{
+        &__ul{
             list-style: none;
-            li{
+            &__li{
                 margin-top: 10px;
-            }
-            a{
-                text-decoration: none;
-                color: black;
-                i{
-                    margin-right:5px;
-                    transition: 0.3s;
+                &__a{
+                    text-decoration: none;
+                    color: black;
+                    i{
+                        margin-right:5px;
+                        transition: 0.3s;
+                    }
                 }
-            }
-            a:hover{
-                i{
-                    color:$color-1st;
+                &__a:hover{
+                    i{
+                        color:$color-1st;
+                    }
                 }
-            }
-        }
-        
-        span{
-            height: 30px;
-            width: 100px;
-            background: $color-1st;
-            border-radius: 25px;
-            border-bottom-left-radius: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
+                &__hello{
+                    height: 30px;
+                    width: 100px;
+                    background: $color-1st;
+                    border-radius: 25px;
+                    border-bottom-left-radius: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                }
+            }  
         }
         &__social{
             list-style: none;
             display: flex;
             justify-content: center;
             align-items: center;
-            li{
-                i{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 5px;
-                    height: 30px;
-                    width: 30px;
+            &__li{
+                &__a{
+                    text-decoration: none;
+                    color: black;
+                    i{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 5px;
+                        height: 30px;
+                        width: 30px;
+                    }
                 }
-                a:hover{
+                &__a:hover{
                     i{
                         color:white;
                         background: $color-1st;
@@ -101,7 +104,6 @@
         &__img{
             height: 300px;
             width: 300px;
-            //background: lighten($color-1st,5%);
             background: linear-gradient(to right, $color-1st,$color-2rd);
             border: solid white 2px;
             border-radius: 50px;
@@ -109,7 +111,7 @@
             justify-content: center;
             align-items: center;
             transform: rotate(45deg);
-            div{
+            &__div{
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -120,8 +122,8 @@
                 //background: $color-1st;
                 background: linear-gradient(to right, $color-1st,$color-2rd);
                 transform: rotate(-45deg);
-                img{
-                    height: 80%;
+                &__img{
+                    width: 100%;
                 }
             }
         }

@@ -151,6 +151,23 @@
             width: 150px;
             cursor: pointer;
         }
+
+        .backendFlip, .frontendFlip, .skillsFlip{
+            height: 50px;
+            width: 150px;
+            background: linear-gradient(to right, $color-1st, $color-2rd);
+            border: none;
+            border-radius: 20px;
+            border-top-left-radius: 0;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            outline: none;
+            transition: 0.3s;
+            &:hover{
+                color: $color-4th;
+            }
+        }
     }
 }
 

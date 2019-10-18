@@ -1,0 +1,21 @@
+.toTop{
+    position: fixed;
+    bottom: -50px;
+    right: 10px;
+    z-index: 4;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    outline: none;
+    border: solid white 1px;
+    background: $color-2rd;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+        color: $color-4th;
+        border-color: $color-4th;
+    }
+}
+

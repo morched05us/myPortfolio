@@ -80,6 +80,10 @@
                     a{
                         color: white;
                         text-decoration: none;
+                        transition: 0.3s;
+                        &:hover{
+                            color: $color-4th;
+                        }
                     }
                     color: white;
                 }
@@ -102,6 +106,7 @@
                     border-radius: 5px;
                     height: 40px;
                     width: 40px;
+                    transition: 0.3s;
                 }
                 a:hover{
                     i{
@@ -148,6 +153,10 @@
             color: white;
             font-size: 20px;
             cursor: pointer;
+            &:hover{
+                color: $color-4th;
+                transition: 0.3s;
+            }
         }
     }
 }
